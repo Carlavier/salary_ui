@@ -3,9 +3,278 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thông tin người dùng</title>
+    <link href="
+https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css
+" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>hello world</h1>
+
+<div class="container mt-5">
+    <div class="form-container mx-auto col-md-6">
+        <h3 class="text-center mb-4">Nhập Thông Tin</h3>
+        <form>
+            <!-- Age -->
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Enter your age" required>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" required>
+                    <option value="" disabled selected>Select your gender</option>
+                    <option value="0">Female</option>
+                    <option value="1">Male</option>
+                </select>
+            </div>
+
+            <!-- Education Level -->
+            <div class="form-group">
+                <label for="education">Education Level</label>
+                <select class="form-control" id="education" required>
+                    <option value="" disabled selected>Select your education level</option>
+                    <option value="0">Bachelor's</option>
+                    <option value="1">Master's</option>
+                    <option value="2">PhD</option>
+                </select>
+            </div>
+
+            <!-- Job Title -->
+            <div class="form-group">
+                <label for="job-title">Job Title</label>
+                <select class="form-control" id="job-title" required>
+                    <option value="" disabled selected>Select your job title</option>
+                    <option value="0">Account Manager</option>
+                    <option value="1">Accountant</option>
+                    <option value="2">Administrative Assistant</option>
+                    <option value="3">Business Analyst</option>
+                    <option value="4">Business Development Manager</option>
+                    <option value="5">Business Intelligence Analyst</option>
+                    <option value="6">CEO</option>
+                    <option value="7">Chief Data Officer</option>
+                    <option value="8">Chief Technology Officer</option>
+                    <option value="9">Content Marketing Manager</option>
+                    <option value="10">Copywriter</option>
+                    <option value="11">Creative Director</option>
+                    <option value="12">Customer Service Manager</option>
+                    <option value="13">Customer Service Rep</option>
+                    <option value="14">Customer Service Representative</option>
+                    <option value="15">Customer Success Manager</option>
+                    <option value="16">Customer Success Rep</option>
+                    <option value="17">Data Analyst</option>
+                    <option value="18">Data Entry Clerk</option>
+                    <option value="19">Data Scientist</option>
+                    <option value="20">Digital Content Producer</option>
+                    <option value="21">Digital Marketing Manager</option>
+                    <option value="22">Director</option>
+                    <option value="23">Director of Business Development</option>
+                    <option value="24">Director of Engineering</option>
+                    <option value="25">Director of Finance</option>
+                    <option value="26">Director of HR</option>
+                    <option value="27">Director of Human Capital</option>
+                    <option value="28">Director of Human Resources</option>
+                    <option value="29">Director of Marketing</option>
+                    <option value="30">Director of Operations</option>
+                    <option value="31">Director of Product Management</option>
+                    <option value="32">Director of Sales</option>
+                    <option value="33">Director of Sales and Marketing</option>
+                    <option value="34">Event Coordinator</option>
+                    <option value="35">Financial Advisor</option>
+                    <option value="36">Financial Analyst</option>
+                    <option value="37">Financial Manager</option>
+                    <option value="38">Graphic Designer</option>
+                    <option value="39">HR Generalist</option>
+                    <option value="40">HR Manager</option>
+                    <option value="41">Help Desk Analyst</option>
+                    <option value="42">Human Resources Director</option>
+                    <option value="43">IT Manager</option>
+                    <option value="44">IT Support</option>
+                    <option value="45">IT Support Specialist</option>
+                    <option value="46">Junior Account Manager</option>
+                    <option value="47">Junior Accountant</option>
+                    <option value="48">Junior Advertising Coordinator</option>
+                    <option value="49">Junior Business Analyst</option>
+                    <option value="50">Junior Business Development Associate</option>
+                    <option value="51">Junior Business Operations Analyst</option>
+                    <option value="52">Junior Copywriter</option>
+                    <option value="53">Junior Customer Support Specialist</option>
+                    <option value="54">Junior Data Analyst</option>
+                    <option value="55">Junior Data Scientist</option>
+                    <option value="56">Junior Designer</option>
+                    <option value="57">Junior Developer</option>
+                    <option value="58">Junior Financial Advisor</option>
+                    <option value="59">Junior Financial Analyst</option>
+                    <option value="60">Junior HR Coordinator</option>
+                    <option value="61">Junior HR Generalist</option>
+                    <option value="62">Junior Marketing Analyst</option>
+                    <option value="63">Junior Marketing Coordinator</option>
+                    <option value="64">Junior Marketing Manager</option>
+                    <option value="65">Junior Marketing Specialist</option>
+                    <option value="66">Junior Operations Analyst</option>
+                    <option value="67">Junior Operations Coordinator</option>
+                    <option value="68">Junior Operations Manager</option>
+                    <option value="69">Junior Product Manager</option>
+                    <option value="70">Junior Project Manager</option>
+                    <option value="71">Junior Recruiter</option>
+                    <option value="72">Junior Research Scientist</option>
+                    <option value="73">Junior Sales Representative</option>
+                    <option value="74">Junior Social Media Manager</option>
+                    <option value="75">Junior Social Media Specialist</option>
+                    <option value="76">Junior Software Developer</option>
+                    <option value="77">Junior Software Engineer</option>
+                    <option value="78">Junior UX Designer</option>
+                    <option value="79">Junior Web Designer</option>
+                    <option value="80">Junior Web Developer</option>
+                    <option value="81">Marketing Analyst</option>
+                    <option value="82">Marketing Coordinator</option>
+                    <option value="83">Marketing Manager</option>
+                    <option value="84">Marketing Specialist</option>
+                    <option value="85">Network Engineer</option>
+                    <option value="86">Office Manager</option>
+                    <option value="87">Operations Analyst</option>
+                    <option value="88">Operations Director</option>
+                    <option value="89">Operations Manager</option>
+                    <option value="90">Principal Engineer</option>
+                    <option value="91">Principal Scientist</option>
+                    <option value="92">Product Designer</option>
+                    <option value="93">Product Manager</option>
+                    <option value="94">Product Marketing Manager</option>
+                    <option value="95">Project Engineer</option>
+                    <option value="96">Project Manager</option>
+                    <option value="97">Public Relations Manager</option>
+                    <option value="98">Recruiter</option>
+                    <option value="99">Research Director</option>
+                    <option value="100">Research Scientist</option>
+                    <option value="101">Sales Associate</option>
+                    <option value="102">Sales Director</option>
+                    <option value="103">Sales Executive</option>
+                    <option value="104">Sales Manager</option>
+                    <option value="105">Sales Operations Manager</option>
+                    <option value="106">Sales Representative</option>
+                    <option value="107">Senior Account Executive</option>
+                    <option value="108">Senior Account Manager</option>
+                    <option value="109">Senior Accountant</option>
+                    <option value="110">Senior Business Analyst</option>
+                    <option value="111">Senior Business Development Manager</option>
+                    <option value="112">Senior Consultant</option>
+                    <option value="113">Senior Data Analyst</option>
+                    <option value="114">Senior Data Engineer</option>
+                    <option value="115">Senior Data Scientist</option>
+                    <option value="116">Senior Engineer</option>
+                    <option value="117">Senior Financial Advisor</option>
+                    <option value="118">Senior Financial Analyst</option>
+                    <option value="119">Senior Graphic Designer</option>
+                    <option value="120">Senior HR Generalist</option>
+                    <option value="121">Senior Marketing Analyst</option>
+                    <option value="122">Senior Marketing Manager</option>
+                    <option value="123">Senior Operations Analyst</option>
+                    <option value="124">Senior Product Manager</option>
+                    <option value="125">Senior Project Manager</option>
+                    <option value="126">Senior Recruiter</option>
+                    <option value="127">Senior Research Scientist</option>
+                    <option value="128">Senior Sales Manager</option>
+                    <option value="129">Senior Software Engineer</option>
+                    <option value="130">Senior UX Designer</option>
+                    <option value="131">Senior Web Developer</option>
+                    <option value="132">Social Media Manager</option>
+                    <option value="133">Software Engineer</option>
+                    <option value="134">Solutions Architect</option>
+                    <option value="135">Supply Chain Manager</option>
+                    <option value="136">Systems Administrator</option>
+                    <option value="137">Technical Support Specialist</option>
+                    <option value="138">UX Designer</option>
+                    <option value="139">Video Editor</option>
+                    <option value="140">VP of Business Development</option>
+                    <option value="141">VP of Engineering</option>
+                    <option value="142">VP of Finance</option>
+                    <option value="143">VP of HR</option>
+                    <option value="144">VP of Human Resources</option>
+                    <option value="145">VP of Marketing</option>
+                    <option value="146">VP of Operations</option>
+                    <option value="147">VP of Product Management</option>
+                    <option value="148">VP of Sales</option>
+                    <option value="149">VP of Sales and Marketing</option>
+                    <option value="150">Web Designer</option>
+                    <option value="151">Web Developer</option>
+                </select>
+            </div>
+
+            <!-- Years of Experience -->
+            <div class="form-group">
+                <label for="experience">Years of Experience</label>
+                <input type="number" class="form-control" id="experience" placeholder="Enter years of experience" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+                class="btn btn-dark btn-block"
+                onclick="predict()"
+            >Submit</button>
+        </form>
+    </div>
+</div>
+<script>
+    const linRegTheta = [2.65229502e+03, 8.32228166e+03, 1.32909503e+04, 2.73298712e+01, 3.15692279e+03, -4.42823901e+04];
+    const gradientTheta = [2401.738530053847, 8207.65940219979, 13236.692268219766, 27.641753766834487, 3420.8924689550972, -37466.10277334214];
+    const libTheta = [2652.29501743, 8322.28165554, 13290.95033734, 27.3298712, 3156.92278531, -44282.39011183701]
+
+    function isNumeric(str) {
+        if (typeof str != "string") return false;
+        return !isNaN(str) && !isNaN(parseFloat(str));
+    }
+
+    function checkData(data) {
+        if (data.length !== 5) return false;
+        return data.reduce((acc, cur) => (acc && (cur || cur === 0)), true);
+    }
+
+    function predictBy(data, theta) {
+        return data.reduce((acc, cur, index) => acc + cur * theta[index], 0) + theta[5];
+    }
+
+    function predict() {
+        const age = document.getElementById("age").value;
+        const gender = document.getElementById("gender").value;
+        const education = document.getElementById("education").value;
+        const jobTitle = document.getElementById("job-title").value;
+        const experience = document.getElementById("experience").value;
+
+        const data = [
+            isNumeric(age) && Number(age),
+            isNumeric(gender) && Number(gender),
+            isNumeric(education) && Number(education),
+            isNumeric(jobTitle) && Number(jobTitle),
+            isNumeric(experience) && Number(experience),
+        ];
+        console.log(data);
+
+        if (!checkData(data)) alert("Invalid input(s)");
+        else {
+            const linReg = predictBy(data, linRegTheta);
+            const gradient = predictBy(data, gradientTheta);
+            const lib = predictBy(data, libTheta);
+
+            alert(`Linear Regression: ${gradient}\nGradient Descent: ${gradient}\nSklearn Library: ${gradient}`)
+        }
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
